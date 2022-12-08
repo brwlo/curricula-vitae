@@ -1,0 +1,334 @@
+<!doctype html><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+<title>Bruno Gasparin - Currículo</title>
+
+<style>
+.hide { display: none; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: monospace; background: #dddddd; }
+main { min-height: 100vh; width: 100vw; counter-reset: page; }
+nav { position: fixed; top: 3vh; left: 3vw; }
+nav ul { list-style: none; }
+nav li { margin-top: 4vh; }
+button {
+  background: black; color: white;
+  padding: 2vh 2vw; font-weight: bold;
+  border: thick solid gold; border-radius: 10vw;
+  box-shadow: .4vh .4vh 1vh gold; }
+button:hover {
+  border: thick solid red;
+  box-shadow: .3vh .3vh 1vh red; }
+h1 { text-align: center; }
+.page {
+  display: flex; flex-direction: column;
+  background: white; page-break-after: always;
+  margin: 3vh auto; box-shadow: 2vh 2vh black;
+  width: 65vh; height: 91.92vh; counter-increment: page; }
+.head { width: 100%; display: flex; font-size: 1.8vh; }
+.pic {
+  border-radius: 50%; border: thick solid gold;
+  margin: 2vh 0 2vh 2vw; width: 15vh; height: 15vh; }
+.hours { color: green; }
+hgroup { text-align: center; width: 85vw; margin-top: 2vh; }
+hgroup>* { margin: 0; }
+.social { margin: 2vh auto; font-weight: bold; }
+.social td { padding: .5vh 1vw; text-align: left; }
+table.social td:last-of-type { text-align: center; }
+.social a { text-decoration: none; }
+.social a:visited { color: blue; }
+.social a:link { color: blue; }
+.spelled { color: black; }
+.body {
+  width: 100%; height: 100%; padding: 1vh 2vw;
+  overflow: hidden; font-size: 1.5vh; }
+.body table {
+  text-align: center; border-spacing: 1.2vh;
+  margin: 0; width: 100%; }
+.body table th { color: #ff2400; }
+.body table th { text-align: left; padding: 0vh 1vw; }
+.body table td { padding: 1vh 1vw; text-align: left; }
+.body table td:first-of-type {
+  border-right: 0vw solid black; text-align: right;
+  font-weight: bold; }
+.body table td:last-of-type {
+  text-align: left; border: none; font-weight: normal; }
+table #edu { border-right: .2vw solid black; }
+#pg2 table.certif { border-collapse: collapse; border-spacing: 0; }
+#pg2 table.certif a { text-decoration: none; }
+#pg2 tr.subhead { font-style: bold; }
+#pg2 tr.subhead td:first-of-type { font-weight: bold; font-size: 1.2em; }
+#pg2 table.certif td,table.certif th { text-align: left; }
+#pg2 table.certif td { text-align: left; }
+#pg2 table.certif td:last-of-type { font-size: .8em; }
+#pg2 table.certif td:nth-of-type(2) { display: none; }
+#pg2 a, #pg2 a:link, #pg2:visited, #pg2:active { color: blue; }
+.foot {
+  padding: 2vh 2vw 2vh; width: 100%;
+  text-align: right; font-size: 2.5vh; }
+.foot .note {
+  display: block; border-top: thin solid black;
+  text-align: left; font-size: .6em; }
+.foot::after {
+  display: block; position: relative;
+  top: 0; bottom: 0; right: 0; left: 0;
+  color: green; content: counter(page); }
+.note sup,.page sup.note { font-weight: bold; color: #ff2400; }
+@page { margin: 0; }
+@media print {
+  main { margin: 0; padding: 0; }
+  .page {
+    margin: 5vh 5vw ; box-shadow: none;
+    width: 100vw; height: 100vh; }
+  .noprint { display: none; }
+  #pg2 .certif td:nth-of-type(2) { display: initial; font-size: .8em; }
+  #pg2 .certif td:last-of-type { display: none; } }
+@media screen and (max-width: 500px) {
+  nav { position: relative; top: 0; width: 100vw; margin: 0; }
+  nav li { display: inline-block; margin-top: 0; }
+  .page { margin: 2vh 2vw 3vh 4vw; width: 90%; }
+}
+</style>
+
+<nav>
+  <ul>
+    <li><button class=noprint onclick=cyc()>português ↔ english</button></li>
+    <li><button class="noprint printer" onclick=prt()>imprimir ↔ print</button></li>
+  </ul>
+</nav>
+
+<main lang=pt>
+  <div class=page id=pg1>
+    <div class=head>
+      <img class=pic src=pic.png>
+      <hgroup>
+        <h1>Bruno Gasparin</h1>
+        <table class=social>
+          <tr>
+            <td><a href=https://wa.me/5541999121988  ><span class="icon fa fa-whatsapp"></span><span class=spelled> 41 9 9912-1988</span></a></td>
+            <td><a href=https://linkedin.com/in/brwno><span class="icon fa fa-linkedin"></span><span class=spelled> in/brwno</span></a></td>
+          </tr>
+          <tr class=hide>
+            <td><a href=https://instagram.com/obrunogasparin><span class="fa fa-instagram"></span><span class=spelled  > @obrunogasparin</span></a></td>
+            <td><a href=https://twitter.com/                ><span class="fa fa-twitter"  ></span><span class=spelled>&nbsp&nbsp@wbrwno</span></a></td>
+          </tr>
+          <tr>
+            <td colspan=2><a href=https://sagitta.xyz/@brw>sagitta.xyz/@brw</a></td>
+          </tr>
+        </table>
+      </hgroup>
+    </div>
+    <div class=body>
+      <table>
+        <thead><tr><th colspan=2>DADOS PESSOAIS</th></tr></thead>
+        <tbody>
+          <tr> <td>Nascimento</td> <td>16 de dezembro de 1986</td> </tr>
+          <tr> <td>Endereço</td>   <td>Av. Anita Garibaldi, 1204-A, 104,<br>Curitiba-PR<span class=hide>, Brazil</span> (82.210-010)</td> </tr>
+          <tr> <td>Telefone<br>Whatsapp</td>   <td>(41) 9 9912-1988</td> </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th colspan=2>EDUCAÇÃO</th></tr></thead>
+        <tbody>
+          <tr> <td id=edu rowspan=2>Graduação</td> <td>Direito, PUC-PR, 2005</td> </tr>
+          <tr> <td>Tecnologia em Análise e Desenvolvimento de Sistemas, <br>UFPR, 2019, <em>incompleto</em><sup class=note>1</sup></mark></td> </tr>
+          <tr> <td>Fluente</td>  <td>portugues, inglês, espanhol</td> </tr>
+          <tr> <td>Aprendido</td> <td>HTML5, CSS, Javascript, PHP, Git, Bash, Linux</td> </tr>
+          <tr> <td>Estudando</td> <td>C, C++, bancos de dados, Python, NodeJS, Forth</td> </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=foot>
+      <div class=note>
+        <span><sup>1 </sup>Ver nota biográfica (p. 3).</span>
+      </div>
+    </div>
+  </div>
+
+  <div id=pg2 class=page>
+    <div class=body>
+      <h1>Certificações</h1>
+      <article>
+        <table class=certif>
+          <tbody>
+            <tr>
+              <td><span class=hours>40h</span> PHP Básico<br><sub><a href=https://www.cursoemvideo.com>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br>8DC26-632E-4</td>
+              <td>[<a href=certificados/php-basico.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-632E-4>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>40h</span> PHP POO<br><sub>(programação orientada a objetos)<br><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br>8DC26-645C-9</td>
+              <td>[<a href=certificados/php-poo.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-645C-9>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>40h</span> MySQL<br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br>8DC26-6573-5</td>
+              <td>[<a href=certificados/mysql.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-6573-5>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Git e Github<br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br></td>
+              <td>[<a href=certificados/git-github.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>20h</span> Segurança da Informação, mód. 0</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br>8DC26-277D4-4</td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-277D4-4>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Segurança da Informação, mód. 1</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Segurança da Informação, mód. 2</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>31h</span> Banco de Dados Oracle Completo 2022</a><br><sub><a href=https://udemy.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Código de validação:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+    <div class=foot></div>
+  </div>
+
+  <div id=pg3 class=page>
+    <div class=body>
+      <article>
+        <h1>Esclarecimento biográfico</h1>
+        <p>Este este currículo para a área de tecnologia e informática não tem como ser muito extenso, pois me falta experiência. Eu sempre fui fascinado pelo assunto, mas nunca pude senão brincar com sites e linguagens de programação aqui e ali, quando sobrava tempo. Foi só em 2018 que resolvi fazer o vestibular da UFPR para de Tecnologia em Análise e Desenvolvimento de Sistemas. Infelizmente, pelo fim do primeiro semestre, tive uma crise médica prolongada na família que me forçou a adiar e finalmente a abandonar o curso.</p>
+        <p>Com isto, os estudos formais organizados ficaram de lado, e a tecnologia voltou a ser um <i>hobby</i> e uma atividade lateral. Ao <i>HTML</i>, <i>CSS</i> e <i>Javascript</i> que já conhecia, acrescentei um pouco de <i>PHP</i>. Estudei um pouco sobre <i>assembly</i> e arquitetura de computadores; um pouco sobre a linguagem de programação mais interessante que eu existe: o <i>Forth</i>. <i>Tentei</i> começar a ler <i>The Art of Computer Programming</i> e outros clássicos da programação, se bem que, isto, apenas quando sobra tempo.</p>
+        <p>Mais recentemente, minha mulher entrou em um negócio de <i>marketing digital</i> e eu fui forçado a lidar um pouco com Wordpress, criando sites e páginas no plugin Elementor e, em certas ocasiões, pego de surpresa, improvisando soluções caseira de e-mail marketing em PHP.</p>
+        <p>Com isso, o que eu quero dizer é apenas que eu tenho algum conhecimento na área, mas, devido aos problemas que tive, não possuo meios de comprovar minha habilidade, seja com um diploma (que anseio por conseguir), seja com uma lista de empregadores anteriores.</p>
+      </article>
+    </div>
+    <div class=foot></div>
+  </div>
+</main>
+
+<main lang=en class=hide>
+  <div class=page id=pg1>
+    <div class=head>
+      <img class=pic src=pic.png>
+      <hgroup>
+        <h1>Bruno Gasparin</h1>
+        <table class=social>
+          <tr>
+            <td><a href=https://wa.me/5541999121988  ><span class="icon fa fa-whatsapp"></span><span class=spelled> 41 9 9912-1988</span></a></td>
+            <td><a href=https://linkedin.com/in/brwno><span class="icon fa fa-linkedin"></span><span class=spelled> in/brwno</span></a></td>
+          </tr>
+          <tr class=hide>
+            <td><a href=https://instagram.com/obrunogasparin><span class="fa fa-instagram"></span><span class=spelled  > @obrunogasparin</span></a></td>
+            <td><a href=https://twitter.com/                ><span class="fa fa-twitter"  ></span><span class=spelled>&nbsp&nbsp@wbrwno</span></a></td>
+          </tr>
+          <tr>
+            <td colspan=2><a href=https://sagitta.xyz/@brw>sagitta.xyz/@brw</a></td>
+          </tr>
+        </table>
+      </hgroup>
+    </div>
+    <div class=body>
+      <table>
+        <thead><tr><th colspan=2>PERSONAL INFORMATION</th></tr></thead>
+        <tbody>
+          <tr> <td>Birth</td> <td>December, 16<sup>th</sup>, 1986</td> </tr>
+          <tr> <td>Address</td>   <td>Anita Garibaldi Avenue, 1204-A, 104,<br>Curitiba-PR<span>, Brazil</span> (ZIP: 82.210-010)</td> </tr>
+          <tr> <td>Phone<br>Whatsapp</td>   <td>+55 41 9 9912-1988</td> </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th colspan=2>EDUCATION</th></tr></thead>
+        <tbody>
+          <tr> <td id=edu rowspan=2>Graduated</td> <td>Law, PUC-PR, 2005</td> </tr>
+          <tr> <td>Tecnologia em Análise e Desenvolvimento de Sistemas, <br>UFPR, 2019, <em>unfinished</em><sup class=note>1</sup></mark></td> </tr>
+          <tr> <td>Fluent</td>  <td>portuguese, english, spanish</td> </tr>
+          <tr> <td>Learned</td> <td>HTML5, CSS, Javascript, PHP, Git, Bash, Linux</td> </tr>
+          <tr> <td>Learning</td> <td>C, C++, databases, Python, NodeJS, Forth</td> </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=foot>
+      <div class=note>
+        <span><sup>1 </sup>See biographic note (p. 3).</span>
+      </div>
+    </div>
+  </div>
+
+  <div id=pg2 class=page>
+    <div class=body>
+      <h1>Certifications</h1>
+      <article>
+        <table class=certif>
+          <tbody>
+            <tr>
+              <td><span class=hours>40h</span> Basic PHP<br><sub><a href=https://www.cursoemvideo.com>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br>8DC26-632E-4</td>
+              <td>[<a href=certificados/php-basico.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-632E-4>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>40h</span> PHP OOP<br><sub>(object oriented programming)<br><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br>8DC26-645C-9</td>
+              <td>[<a href=certificados/php-poo.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-645C-9>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>40h</span> MySQL<br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br>8DC26-6573-5</td>
+              <td>[<a href=certificados/mysql.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-6573-5>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Git e Github<br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br></td>
+              <td>[<a href=certificados/git-github.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr>
+              <td><span class=hours>20h</span> Information Security, mod. 0</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br>8DC26-277D4-4</td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=8DC26-277D4-4>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Information Security, mod. 1</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>20h</span> Information Security, mod. 2</a><br><sub><a href=https://www.cursoemvideo.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+            <tr class=hide>
+              <td><span class=hours>31h</span> Banco de Dados Oracle Completo 2022</a><br><sub><a href=https://udemy.com/>cursoemvideo.com</a> (Gustavo Guanabara)</sub></td>
+              <td>Validation code:<br></td>
+              <td>[<a href=certificados/seguranca-informacao-0.pdf>pdf</a>] [<a href=https://www.cursoemvideo.com/validacao-de-certificado/?codigo=>validação</a>]</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+    <div class=foot></div>
+  </div>
+
+  <div id=pg3 class=page>
+    <div class=body>
+      <article>
+        <h1>Biographic Clarification</h1>
+        <p>My curriculum for work in the technology area could not be very extense, since I lack experience. I was always fascinated by the subject but never do more than play around with websites and programming languages here and there, when the time allowed. It was only in 2018, that I decided to take the formal Technical Course in Systems Development and Analysis. Unfortunately, by the end of the first semester, a prologed medical crisis in the family forced me to put it aside and finally to give it up when the crisis proved too much to handle.</p>
+        <p>With this, the formal studies where neglected and technology became once more a hobby. To <i>HTML</i>, <i>CSS</i> and <i>Javascript</i>, which I already knew well, I added some acquaintance with <i>PHP</i>, <i>assembly</i> e <i>computer architecture</i>. I also found out about a very interesting programming language: <i>Forth</i>. I also tried to start reading <i>The Art of Computer Programming</i> and other classics, though I haven't had the time to do it properly yet.</p>
+        <p>More recently, my wife started a digital marketing business and I was forced to deal a bit with <i>Wordpress</i>, webdesign with <i>Elementor</i> or just raw <i>HTML</i> and, sometimes, when urgency required it, to improvise a PHP e-mail marketing solution.</p>
+        <p>With all this, I want to show that I do have some knowledge and am not starting from scratch, but, due to certain unfortunate event, I still don't have any way of proving my abilities, be it with a diploma or with previous employment in the area.</p>
+      </article>
+    </div>
+    <div class=foot></div>
+  </div>
+</main>
+
+<script defer>
+  let lang = document.querySelectorAll("main")
+  let prt  = ()=> window.print()
+  let cyc  = ()=> lang.forEach(e=>e.classList.toggle("hide"))
+</script>
