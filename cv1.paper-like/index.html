@@ -54,15 +54,15 @@ table.social td:last-of-type { text-align: center; }
 .body table td:last-of-type {
   text-align: left; border: none; font-weight: normal; }
 table #edu { border-right: .2vw solid black; }
-#pg2 table.certif { border-collapse: collapse; border-spacing: 0; }
-#pg2 table.certif a { text-decoration: none; }
-#pg2 tr.subhead { font-style: bold; }
-#pg2 tr.subhead td:first-of-type { font-weight: bold; font-size: 1.2em; }
-#pg2 table.certif td,table.certif th { text-align: left; }
-#pg2 table.certif td { text-align: left; }
-#pg2 table.certif td:last-of-type { font-size: .8em; }
-#pg2 table.certif td:nth-of-type(2) { display: none; }
-#pg2 a, #pg2 a:link, #pg2:visited, #pg2:active { color: blue; }
+.pg2 table.certif { border-collapse: collapse; border-spacing: 0; }
+.pg2 table.certif a { text-decoration: none; }
+.pg2 tr.subhead { font-style: bold; }
+.pg2 tr.subhead td:first-of-type { font-weight: bold; font-size: 1.2em; }
+.pg2 table.certif td,table.certif th { text-align: left; }
+.pg2 table.certif td { text-align: left; }
+.pg2 table.certif td:last-of-type { font-size: .8em; }
+.pg2 table.certif td:nth-of-type(2) { display: none; }
+.pg2 a, .pg2 a:link, .pg2:visited, .pg2:active { color: blue; }
 .foot {
   padding: 2vh 2vw 2vh; width: 100%;
   text-align: right; font-size: 2.5vh; }
@@ -82,8 +82,8 @@ table #edu { border-right: .2vw solid black; }
     margin: 5vh 5vw ; box-shadow: none;
     width: 100vw; height: 100vh; }
   .noprint { display: none; }
-  #pg2 .certif td:nth-of-type(2) { display: initial; font-size: .8em; }
-  #pg2 .certif td:last-of-type { display: none; } }
+  .pg2 .certif td:nth-of-type(2) { display: initial; font-size: .8em; }
+  .pg2 .certif td:last-of-type { display: none; } }
 @media screen and (max-width: 500px) {
   nav { position: relative; top: 0; width: 100vw; margin: 0; }
   nav li { display: inline-block; margin-top: 0; }
@@ -99,7 +99,7 @@ table #edu { border-right: .2vw solid black; }
 </nav>
 
 <main lang=pt>
-  <div class=page id=pg1>
+  <div class="pg1 page">
     <div class=head>
       <img class=pic src=images/pic.png>
       <hgroup>
@@ -147,7 +147,7 @@ table #edu { border-right: .2vw solid black; }
     </div>
   </div>
 
-  <div id=pg2 class=page>
+  <div class="pg2 page">
     <div class=body>
       <h1>Certificações</h1>
       <article>
@@ -210,7 +210,7 @@ table #edu { border-right: .2vw solid black; }
     <div class=foot></div>
   </div>
 
-  <div id=pg3 class=page>
+  <div class="pg3 page">
     <div class=body>
       <article>
         <h1>Esclarecimento biográfico</h1>
@@ -225,7 +225,7 @@ table #edu { border-right: .2vw solid black; }
 </main>
 
 <main lang=en class=hide>
-  <div class=page id=pg1>
+  <div class="pg1 page">
     <div class=head>
       <img class=pic src=images/pic.png>
       <hgroup>
@@ -273,7 +273,7 @@ table #edu { border-right: .2vw solid black; }
     </div>
   </div>
 
-  <div id=pg2 class=page>
+  <div class="pg2 page">
     <div class=body>
       <h1>Certifications</h1>
       <article>
@@ -336,7 +336,7 @@ table #edu { border-right: .2vw solid black; }
     <div class=foot></div>
   </div>
 
-  <div id=pg3 class=page>
+  <div class="pg3 page">
     <div class=body>
       <article>
         <h1>Biographic Clarification</h1>
@@ -351,7 +351,13 @@ table #edu { border-right: .2vw solid black; }
 </main>
 
 <script defer>
+  let $q   = x => document.querySelectorAll(x)
   let lang = document.querySelectorAll("main")
   let prt  = ()=> window.print()
   let cyc  = ()=> lang.forEach(e=>e.classList.toggle("hide"))
+  let hid  = ()=> {
+    window.location.search.match(/hd=\d+/g)
+    .forEach(e => $q(e.replace("hd=",".pg"))
+    .forEach(i => i.style.display="none" ))
+  }; hid()
 </script>
